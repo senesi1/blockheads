@@ -1,0 +1,7 @@
+Blockhead questions - 4/23/2026
+
+• **Granularity of tracking:** Should the system operate purely at a per-file level (treating each file as an independent object), or do we need to preserve and manage directory/repository structure as part of the provenance model?
+
+• **Historical reconstruction requirements:** Do we need to support reconstruction of prior states (e.g., diffs or rollback), or is it sufficient to provide forward-only provenance (i.e., how a file arrived at its current state)? If backward traversal is required, are there any security constraints if classification policies change over time?
+
+• **Consistency and access semantics:** Related to James' earlier question concerning frequency of validation.  How should we handle long-lived access? For example, if a user opens a file and its classification or policy changes during that session, what guarantees or enforcement behavior are expected (e.g., immediate invalidation, continued access with audit, or re-verification on use)?
