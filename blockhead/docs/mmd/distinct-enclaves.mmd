@@ -1,0 +1,11 @@
+flowchart LR
+
+    subgraph Alpha["Enclave Alpha"]
+        C1[Client] -->|checkout| A1[API]
+        C1 -->|checkin| A1
+    end
+
+    subgraph Bravo["Enclave Bravo"]
+        C2[Client] -->|checkout| A2[API]
+        C2 -->|checkin| A2
+    end
